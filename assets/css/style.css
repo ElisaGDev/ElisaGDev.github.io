@@ -1,57 +1,116 @@
-
-* {
-    box-sizing: border-box;
+.typography-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+.typography-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #505050;
+}
+
+.typography-resto {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-pink {
+  background: #FF79DA;
+  background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
+  background-image: -moz-linear-gradient(top, #FF79DA, #9356DC);
+  background-image: -ms-linear-gradient(top, #FF79DA, #9356DC);
+  background-image: -o-linear-gradient(top, #FF79DA, #9356DC);
+  background-image: -webkit-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  height: 50px;
+  line-height: 40px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  width: 220px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  -webkit-box-shadow: 0 5px 10px 0 #000000;
+  -moz-box-shadow: 0 5px 10px 0 #000000;
+  box-shadow: 0 5px 10px 0 #000000;
+  border: 0px;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin: 10px 0 80px 0;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    height: 60px;
+  display: flex;
+  justify-content: center;
+  height: 60px;
 }
 
 header > img {
-    height: 50%;
-    align-self: center;
+  height: 50%;
+  align-self: center;
 }
 
-section{
-    display: flex;
-}
-
-.location{
-    height: 50px;
-    background-color: #eaeaea;
+.location {
+  height: 50px;
+  background-color: #eaeaea;
 }
 
 .location:first-child {
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 700;
-    color:#353535;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #353535;
 }
 
 .location i {
-    padding-right: 15px;
-    color:#353535;
+  padding-right: 15px;
+  color: #353535;
 }
 
 .presentation {
-    flex-direction: column;
-    background-color: #f6f6f6;
+  flex-direction: column;
+  background-color: #f6f6f6;
 }
 
-.presentation h1{
-    text-align: center;
-    font-size: 24px;
-    font-weight:bold;
+.presentation h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
-.presentation p{
-    text-align: center;
-    font-size: 18px;
-    color: #505050;
+
+.presentation p {
+  text-align: center;
+  font-size: 18px;
+  color: #505050;
 }
+
+a .btn-pink {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

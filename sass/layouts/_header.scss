@@ -1,0 +1,10 @@
+// Header
+header {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+header > img {
+    height: 50%;
+    align-self: center;
+}
