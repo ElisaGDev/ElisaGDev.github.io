@@ -1,11 +1,11 @@
 // Buttons
 .btn-pink {
-    background: #FF79DA;
-    background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
-    background-image: -moz-linear-gradient(top, #FF79DA, #9356DC);
-    background-image: -ms-linear-gradient(top, #FF79DA, #9356DC);
-    background-image: -o-linear-gradient(top, #FF79DA, #9356DC);
-    background-image: -webkit-gradient(to bottom, #FF79DA, #9356DC);
+    background: $color-secondary;
+    background-image: -webkit-linear-gradient(top, $color-secondary, $color-primary);
+    background-image: -moz-linear-gradient(top, $color-secondary, $color-primary);
+    background-image: -ms-linear-gradient(top, $color-secondary, $color-primary);
+    background-image: -o-linear-gradient(top, $color-secondary, $color-primary);
+    background-image: -webkit-gradient(to bottom, $color-secondary, $color-primary);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
