@@ -49,9 +49,9 @@ a {
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
-  -webkit-box-shadow: 0 5px 10px 0 #000000;
-  -moz-box-shadow: 0 5px 10px 0 #000000;
-  box-shadow: 0 5px 10px 0 #000000;
+  -webkit-box-shadow: 0 5px 5px 0 #505050;
+  -moz-box-shadow: 0 5px 5px 0 #505050;
+  box-shadow: 0 5px 5px 0 #505050;
   border: 0px;
   text-decoration: none;
   cursor: pointer;
@@ -59,7 +59,16 @@ a {
   justify-content: center;
   align-self: center;
   align-items: center;
-  margin: 10px 0 80px 0;
+  margin: 10px 0 60px 0;
+}
+
+.btn-fnct {
+  display: flex;
+  background: #f6f6f6;
+  border-radius: 20px;
+  height: 70px;
+  align-items: center;
+  width: 100%;
 }
 
 header {
@@ -97,6 +106,8 @@ header > img {
 }
 
 .presentation h1 {
+  margin-top: 40px;
+  margin-bottom: auto;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -114,7 +125,38 @@ a .btn-pink {
 }
 
 .functioning {
+  flex-direction: column;
   margin: 20px 20px 50px;
+}
+
+.functioning h2 {
+  margin-bottom: 30px;
+}
+
+.functioning a {
+  margin-bottom: 20px;
+}
+
+a .circle {
+  color: #FFF;
+  background-color: #9356DC;
+  border-radius: 60px;
+  padding: 3px 7px;
+  font-size: 15px;
+  margin-left: -10px;
+  display: flex;
+  overflow: visible;
+}
+
+.icon {
+  color: #505050;
+  margin: 0 30px;
+  font-size: 20px;
+  width: 3%;
+}
+
+.btn-fnct span {
+  flex-grow: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
