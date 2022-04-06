@@ -1,0 +1,78 @@
+//Menus section
+.menu{
+    background-color: $color-bkgd;
+    border-radius: 40px 40px 0 0;
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+}
+.pictureRestaurant{
+    background: url(../css/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+.nameRestaurant{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    align-items: baseline;
+    height: 100px;
+}
+.nameRestaurant h2{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 500;
+    font-size: 28px;
+}
+.nameRestaurant i{
+    font-size: 25px;
+}
+.submenu{
+    margin: 0 20px;
+}
+.submenu h3{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 18px;
+    margin: 20px 0 0 5px;
+}
+.submenu h3::after{
+    content: "";
+    display: block;
+    background-color: $color-tertiary;
+    height: 3px;
+    width: 40px;
+    margin-top: 5px;
+}
+.dishes{
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0;
+    margin-top: 15px;
+}
+.dishes_text{
+    width: 80%;
+    justify-content: space-between;
+    font-weight: 200;
+    font-size: 16px;
+    padding: 12px 0 12px 12px;
+}
+.dishes_text p{
+    margin: 0;
+}
+.dishes_text .dish_name{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.dishes_price{
+    align-self: flex-end;
+    width: 20%;
+    text-align: center;
+    font-weight: 500;
+}
+.menu .btn-menu{
+    margin-top: 50px;
+    text-align: -webkit-center;
+}

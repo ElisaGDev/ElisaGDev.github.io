@@ -1,10 +1,32 @@
 // Header
 header {
     display: flex;
-    justify-content: center;
     height: 60px;
 }
-header > img {
+.header_homepage{
+    justify-content: center;
+}
+.header_homepage img {
     height: 50%;
     align-self: center;
+}
+.header_menu{
+    justify-content: space-between;
+}
+.logo{
+    flex: 1;
+    text-align: center;
+}
+.logo img{
+    height: 50%;
+    margin: 15px;
+}
+.header_menu a{
+    width: 60px;
+    text-align: center;
+    align-self: center;
+}
+.header_menu a i{
+    margin: auto;
+    font-size: 20px;
 }

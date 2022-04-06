@@ -1,0 +1,22 @@
+//Footer
+footer{
+    background-color: $color-grey;
+    color: #fff;
+    padding-bottom: 30px;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-left: -20px;
+}
+.titleFooter{
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 20px;
+    padding: 20px 0 10px 20px;
+}
+footer i{
+    font-size: 16px;
+    margin-right: 10px;
+}

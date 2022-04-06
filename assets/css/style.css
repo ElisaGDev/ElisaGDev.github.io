@@ -6,12 +6,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-section {
-  display: flex;
-}
-
 a {
   text-decoration: none;
+}
+
+.flex {
+  display: flex;
 }
 
 .btn-pink {
@@ -52,17 +52,72 @@ a {
   height: 70px;
   align-items: center;
   width: 100%;
+  -webkit-box-shadow: 5px 5px 20px 0px #D6D6D6;
+  box-shadow: 5px 5px 20px 0px #D6D6D6;
 }
 
 header {
   display: flex;
-  justify-content: center;
   height: 60px;
 }
 
-header > img {
+.header_homepage {
+  justify-content: center;
+}
+
+.header_homepage img {
   height: 50%;
   align-self: center;
+}
+
+.header_menu {
+  justify-content: space-between;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+.logo img {
+  height: 50%;
+  margin: 15px;
+}
+
+.header_menu a {
+  width: 60px;
+  text-align: center;
+  align-self: center;
+}
+
+.header_menu a i {
+  margin: auto;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #505050;
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-left: -20px;
+}
+
+.titleFooter {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
+  padding: 20px 0 10px 20px;
+}
+
+footer i {
+  font-size: 16px;
+  margin-right: 10px;
 }
 
 .location {
@@ -151,10 +206,15 @@ a .circle {
   margin: 50px 20px 10px;
 }
 
+.restaurants a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .restaurants figure {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin: 0 20px 10px;
 }
 
 figure {
@@ -163,12 +223,13 @@ figure {
 
 .new {
   position: absolute;
-  right: 55px;
+  right: 45px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 10px 15px;
   background-color: #99E2D0;
   color: green;
-  border-radius: 5px;
+  border-radius: 3px;
+  font-weight: 500;
 }
 
 figure img {
@@ -190,7 +251,6 @@ figcaption {
 }
 
 figcaption h3 {
-  margin-top: 10px;
   margin-bottom: 5px;
 }
 
@@ -204,6 +264,97 @@ figcaption p {
   margin-top: 20px;
   font-size: 25px;
   right: 80px;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  padding-bottom: 30px;
+  margin-bottom: -30px;
+}
+
+.pictureRestaurant {
+  background: url(../css/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.nameRestaurant {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  align-items: baseline;
+  height: 100px;
+}
+
+.nameRestaurant h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.nameRestaurant i {
+  font-size: 25px;
+}
+
+.submenu {
+  margin: 0 20px;
+}
+
+.submenu h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 18px;
+  margin: 20px 0 0 5px;
+}
+
+.submenu h3::after {
+  content: "";
+  display: block;
+  background-color: #99E2D0;
+  height: 3px;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.dishes {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.dishes_text {
+  width: 80%;
+  justify-content: space-between;
+  font-weight: 200;
+  font-size: 16px;
+  padding: 12px 0 12px 12px;
+}
+
+.dishes_text p {
+  margin: 0;
+}
+
+.dishes_text .dish_name {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.dishes_price {
+  align-self: flex-end;
+  width: 20%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.menu .btn-menu {
+  margin-top: 50px;
+  text-align: -webkit-center;
 }
 
 /*# sourceMappingURL=style.css.map */
