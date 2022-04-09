@@ -1,6 +1,6 @@
 //Menus section
 .menu{
-    background-color: $color-bkgd;
+    background-color: $color-grey;
     border-radius: 40px 40px 0 0;
     transform: translateY(-30px);
     -webkit-transform: translateY(-30px);
@@ -8,46 +8,51 @@
     margin-bottom: -30px;
 }
 .pictureRestaurant{
-    background: url(../css/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
     height: 250px;
+    &.la_palette_du_gout{
+        @include resto-bkgd(palette-du-gout);
+    }
+    &.la_note_enchantee{
+        @include resto-bkgd(note-enchantee);
+    }
+    &.a_la_francaise{
+        @include resto-bkgd(a-la-francaise);
+    }
+    &.le_delice_des_sens{
+        @include resto-bkgd(delice-des-sens);
+    }
 }
 .nameRestaurant{
-    display: flex;
     justify-content: space-between;
     margin: 0 20px;
     align-items: baseline;
     height: 100px;
-}
-.nameRestaurant h2{
-    font-family: 'Shrikhand', cursive;
-    font-weight: 500;
-    font-size: 28px;
-}
-.nameRestaurant i{
-    font-size: 25px;
+    h2{
+        @extend %typography-resto;
+    }
+    i{
+        font-size: 25px;
+    }
 }
 .submenu{
     margin: 0 20px;
-}
-.submenu h3{
-    text-transform: uppercase;
-    font-weight: 200;
-    font-size: 18px;
-    margin: 20px 0 0 5px;
-}
-.submenu h3::after{
-    content: "";
-    display: block;
-    background-color: $color-tertiary;
-    height: 3px;
-    width: 40px;
-    margin-top: 5px;
+    h3{
+        text-transform: uppercase;
+        font-weight: 200;
+        margin: 20px 0 0 5px;
+        &::after{
+            content: "";
+            display: block;
+            background-color: $color-tertiary;
+            height: 3px;
+            width: 40px;
+            margin-top: 5px;
+        }
+    }
 }
 .dishes{
     border-radius: 20px;
-    background-color: #fff;
+    background-color: $color-white;
     padding: 0;
     margin-top: 15px;
 }
@@ -55,15 +60,15 @@
     width: 80%;
     justify-content: space-between;
     font-weight: 200;
-    font-size: 16px;
     padding: 12px 0 12px 12px;
+    @extend %typography-description;
+    p{
+        margin:0;
+    }
 }
-.dishes_text p{
-    margin: 0;
-}
-.dishes_text .dish_name{
+.dish_name{
+    @extend %typography-subtitle;
     font-weight: 600;
-    font-size: 20px;
     margin-bottom: 5px;
 }
 .dishes_price{
@@ -75,4 +80,5 @@
 .menu .btn-menu{
     margin-top: 50px;
     text-align: -webkit-center;
+    text-align: -moz-center;
 }

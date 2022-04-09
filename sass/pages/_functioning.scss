@@ -2,25 +2,24 @@
 .functioning{
     flex-direction: column;
     margin: 20px 20px 50px;
-}
-.functioning h2{
-    margin-bottom: 30px;
-}
-.functioning a{
-    margin-bottom: 20px;
+    h2{
+        margin-bottom: 30px;
+    }
+    a{
+        margin-bottom: 20px;
+    }
 }
 a .circle{
-    color:#FFF;
+    color:$color-white;
     background-color: $color-primary;
     border-radius: 60px;
     padding: 3px 7px;
     font-size: 15px;
     margin-left: -10px;
-    display: flex;
     overflow: visible;
 }
 .icon{
-    color: $color-grey;
+    color: $color-medgrey;
     margin: 0 30px;
     font-size: 20px;
     width: 3%;

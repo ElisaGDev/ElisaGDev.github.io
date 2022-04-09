@@ -1,15 +1,15 @@
 .location{
     height: 50px;
-    background-color: #eaeaea;
-}
-.location:first-child {
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 700;
-    color:#353535;
-}
-.location i {
-    padding-right: 15px;
-    color:#353535;
+    background-color:$color-lightgrey;
+    i{
+        padding-right: 15px;
+        color:$color-darkgrey;
+    }
+    &:first-child{
+        justify-content: center;
+        align-items: center;
+        color:$color-darkgrey;
+        font-weight: 700;
+        @extend %typography-description;
+    }
 }

@@ -1,41 +1,38 @@
 // Buttons
 .btn-pink {
-    background: $color-secondary;
-    background-image: -webkit-linear-gradient(top, $color-secondary, $color-primary);
-    background-image: -moz-linear-gradient(top, $color-secondary, $color-primary);
-    background-image: -ms-linear-gradient(top, $color-secondary, $color-primary);
-    background-image: -o-linear-gradient(top, $color-secondary, $color-primary);
-    background-image: -webkit-gradient(to bottom, $color-secondary, $color-primary);
+    background: linear-gradient(170deg, $color-secondary, lighten($color-primary, 5%));
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
     height: 50px;
     line-height: 40px;
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
+    color:$color-white;
     width: 220px;
-    font-size: 16px;
     font-weight: 500;
-    padding: 10px;
-    -webkit-box-shadow: 0 5px 5px 0 $color-grey;
-    -moz-box-shadow: 0 5px 5px 0 $color-grey;
-    box-shadow: 0 5px 5px 0 $color-grey;
+    padding: 10px 20px;
     border: 0px;
     text-decoration: none;
     cursor: pointer;
-    display: flex;
     justify-content: center;
     align-self: center;
     align-items: center;
     margin: 10px 0 60px 0;
+    @extend %typography-description;
+    @include shadow-box;
  }
  .btn-fnct{
-     display: flex;
-     background: $color-bkgd;
+     background: $color-grey;
      border-radius: 20px;
      height: 70px;
      align-items: center;
      width: 100%;
-     -webkit-box-shadow: 5px 5px 20px 0px #D6D6D6; 
-    box-shadow: 5px 5px 20px 0px #D6D6D6;
+    @include shadow-box;
+    font-size: 15px;
+    font-weight: 500;
+    &:hover{
+        background-color: lighten($color-primary, 30%);
+        i{
+            color:$color-primary;
+        }
+    }
  }

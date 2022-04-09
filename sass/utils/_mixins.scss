@@ -1,0 +1,6 @@
+@mixin shadow-box($color: darken($color-grey, 20%)) {
+    box-shadow: 0 3px 8px $color;
+}
+@mixin resto-bkgd($resto) {
+    background: url('./images/restaurants/#{map-get($images-resto, $resto)}') center/cover;
+}

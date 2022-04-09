@@ -5,28 +5,28 @@ header {
 }
 .header_homepage{
     justify-content: center;
-}
-.header_homepage img {
-    height: 50%;
-    align-self: center;
+    img{
+        height: 50%;
+        align-self: center;
+    }
 }
 .header_menu{
     justify-content: space-between;
+    a{
+        width: 60px;
+        text-align: center;
+        align-self: center;
+    }
+    a i{
+        margin: auto;
+        font-size: 20px;
+    }
 }
 .logo{
     flex: 1;
     text-align: center;
-}
-.logo img{
-    height: 50%;
-    margin: 15px;
-}
-.header_menu a{
-    width: 60px;
-    text-align: center;
-    align-self: center;
-}
-.header_menu a i{
-    margin: auto;
-    font-size: 20px;
+    img{
+        height: 50%;
+        margin: 15px;
+    }
 }
