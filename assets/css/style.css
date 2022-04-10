@@ -347,17 +347,71 @@ figcaption p {
   border-radius: 20px;
   background-color: #FFF;
   padding: 0;
-  margin-top: 15px;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 14px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.dishes .check__animation {
+  background-color: #99E2D0;
+  width: 72px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 300ms 100ms linear;
+}
+.dishes .check__animation .anim_icon {
+  color: #FFF;
+  font-size: 1.6rem;
+  margin: auto;
+  transform: rotate(0deg);
+  transition: transform 300ms 100ms linear;
+}
+.dishes:hover {
+  cursor: pointer;
+}
+.dishes:hover .dishes_text {
+  width: 60%;
+}
+.dishes:hover .dishes_text .dish_name, .dishes:hover .dishes_text p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.dishes:hover .check__animation {
+  transform: scaleX(1);
+}
+.dishes:hover .anim_icon {
+  transform: rotate(360deg);
+}
+.dishes:hover .dishes_price {
+  transform: translateX(-72px);
+}
+.dishes:nth-of-type(1) {
+  animation: menu-load 800ms 200ms forwards;
+}
+.dishes:nth-of-type(2) {
+  animation: menu-load 800ms 400ms forwards;
+}
+.dishes:nth-of-type(3) {
+  animation: menu-load 800ms 600ms forwards;
+}
+.dishes:nth-of-type(4) {
+  animation: menu-load 800ms 800ms forwards;
 }
 
 .dishes_text {
   width: 80%;
   justify-content: space-between;
   font-weight: 200;
-  padding: 12px 0 12px 12px;
-}
-.dishes_text p {
-  margin: 0;
+  padding-left: 12px;
+  transition: width 300ms 100ms linear;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
 }
 
 .dish_name {
@@ -367,9 +421,20 @@ figcaption p {
 
 .dishes_price {
   align-self: flex-end;
-  width: 20%;
   text-align: center;
   font-weight: 500;
+  transition: transform 300ms 100ms linear;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  -webkit-transform-origin: right;
+  -ms-transform-origin: right;
+  transform-origin: right;
+  -webkit-transition: -webkit-transform 300ms 100ms linear;
+  transition: -webkit-transform 300ms 100ms linear;
+  -o-transition: transform 300ms 100ms linear;
+  transition: transform 300ms 100ms linear;
+  transition: transform 300ms 100ms linear, -webkit-transform 300ms 100ms linear;
 }
 
 .menu .btn-menu {

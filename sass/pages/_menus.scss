@@ -54,17 +54,64 @@
     border-radius: 20px;
     background-color: $color-white;
     padding: 0;
-    margin-top: 15px;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 14px;
+    border-radius: 1rem;
+    overflow: hidden;
+    .check__animation{
+        background-color: $color-tertiary;
+        width: $check-transition-width;
+        transform-origin: right;
+        transform: scaleX(0);
+        @include check-transition-timing(transform);
+        .anim_icon{
+            color: $color-white;
+            font-size: 1.6rem;
+            margin: auto;
+            transform: rotate(0deg);
+            @include check-transition-timing(transform);
+        }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    &:hover .dishes_text{
+        width: 60%;
+        .dish_name, p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    &:hover .check__animation{
+        transform: scaleX(1);
+    }
+    &:hover .anim_icon{
+        transform: rotate(360deg);
+    }
+    &:hover .dishes_price{
+        transform: translateX(-$check-transition-width);
+    }
+    @for $i from 1 through ($max-dishes){
+        &:nth-of-type(#{$i}){
+            animation: menu-load 800ms $menu-appear-delay*$i forwards;
+        }
+    }
 }
 .dishes_text{
     width: 80%;
     justify-content: space-between;
     font-weight: 200;
-    padding: 12px 0 12px 12px;
+    padding-left: 12px;
     @extend %typography-description;
-    p{
-        margin:0;
-    }
+    @include check-transition-timing(width);
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
 }
 .dish_name{
     @extend %typography-subtitle;
@@ -73,9 +120,20 @@
 }
 .dishes_price{
     align-self: flex-end;
-    width: 20%;
     text-align: center;
     font-weight: 500;
+    @include check-transition-timing(transform);
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+    -webkit-transition: -webkit-transform 300ms 100ms linear;
+    transition: -webkit-transform 300ms 100ms linear;
+    -o-transition: transform 300ms 100ms linear;
+    transition: transform 300ms 100ms linear;
+    transition: transform 300ms 100ms linear, -webkit-transform 300ms 100ms linear;
 }
 .menu .btn-menu{
     margin-top: 50px;

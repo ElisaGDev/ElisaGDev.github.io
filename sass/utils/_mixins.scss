@@ -28,3 +28,6 @@
         transition: transform 150ms 50ms ease-in-out;
     }
 }
+@mixin check-transition-timing($type){
+    transition: $type 300ms 100ms linear;
+}
