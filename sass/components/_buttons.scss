@@ -19,6 +19,11 @@
     margin: 10px 0 60px 0;
     @extend %typography-description;
     @include shadow-box;
+    &:hover{
+        color: $color-white;
+        background: linear-gradient(170deg, lighten($color-secondary, 5%), lighten($color-primary, 5%));
+        @include shadow-box(darken($color-medgrey, 5%));
+    }
  }
  .btn-fnct{
      background: $color-grey;

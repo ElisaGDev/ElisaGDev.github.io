@@ -4,3 +4,27 @@
 @mixin resto-bkgd($resto) {
     background: url('./images/restaurants/#{map-get($images-resto, $resto)}') center/cover;
 }
+@mixin heart-transition{
+    .emptyHeart{
+        font-size: 1.7rem;
+        cursor: pointer;
+        position: relative;
+        transition: color 150ms 50ms ease;
+        &:hover{
+            color: transparent;
+        }
+        &:hover > .fullHeart{
+            transform: scale(1);
+        }
+    }
+    .fullHeart{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(170deg, $color-secondary, $color-primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        transition: transform 150ms 50ms ease-in-out;
+    }
+}

@@ -33,7 +33,6 @@
 }
 figcaption{
     display: flex;
-    flex-direction: column;
     width: 100%;
     padding: 0px 20px;
     background-color:$color-white;
@@ -47,9 +46,15 @@ figcaption{
         font-weight: 200;
     }
 }
+.description{
+    flex:1;
+    flex-direction: column;
+}
 .iconFavorite{
-    position: absolute;
-    margin-top: 25px;
     font-size: 25px;
-    right: 60px;
+    width: 60px;
+    @include heart-transition;
+}
+.emptyHeart{
+    margin: auto;
 }

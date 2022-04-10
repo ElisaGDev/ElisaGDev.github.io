@@ -57,6 +57,11 @@ a, a:hover, a:active, a:focus {
   margin: 10px 0 60px 0;
   box-shadow: 0 3px 8px #c3c3c3;
 }
+.btn-pink:hover {
+  color: #FFF;
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0 3px 8px #717171;
+}
 
 .btn-fnct {
   background: #F6F6F6;
@@ -236,7 +241,6 @@ a .circle {
 
 figcaption {
   display: flex;
-  flex-direction: column;
   width: 100%;
   padding: 0px 20px;
   background-color: #FFF;
@@ -251,11 +255,40 @@ figcaption p {
   font-weight: 200;
 }
 
+.description {
+  flex: 1;
+  flex-direction: column;
+}
+
 .iconFavorite {
-  position: absolute;
-  margin-top: 25px;
   font-size: 25px;
-  right: 60px;
+  width: 60px;
+}
+.iconFavorite .emptyHeart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  transition: color 150ms 50ms ease;
+}
+.iconFavorite .emptyHeart:hover {
+  color: transparent;
+}
+.iconFavorite .emptyHeart:hover > .fullHeart {
+  transform: scale(1);
+}
+.iconFavorite .fullHeart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 150ms 50ms ease-in-out;
+}
+
+.emptyHeart {
+  margin: auto;
 }
 
 .menu {
