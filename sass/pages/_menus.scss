@@ -59,6 +59,7 @@
     margin-top: 14px;
     border-radius: 1rem;
     overflow: hidden;
+    @include shadow-box;
     .check__animation{
         background-color: $color-tertiary;
         width: $check-transition-width;
@@ -93,6 +94,18 @@
     &:hover .dishes_price{
         transform: translateX(-$check-transition-width);
     }
+    @keyframes menu-load{
+        0% {
+            transform: translateY(20px);
+        }
+        75%{
+            opacity: .5;
+        }
+        100% {
+            transform: translate(0);
+            opacity: 1;
+        }
+    }
     @for $i from 1 through ($max-dishes){
         &:nth-of-type(#{$i}){
             animation: menu-load 800ms $menu-appear-delay*$i forwards;
@@ -106,34 +119,20 @@
     padding-left: 12px;
     @extend %typography-description;
     @include check-transition-timing(width);
-    -webkit-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: left;
-    -ms-transform-origin: left;
-    transform-origin: left;
 }
 .dish_name{
-    @extend %typography-subtitle;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
+    @extend %typography-subtitle;
 }
 .dishes_price{
     align-self: flex-end;
     text-align: center;
     font-weight: 500;
-    @include check-transition-timing(transform);
     position: absolute;
-    right: 10px;
+    right: 15px;
     bottom: 5px;
-    -webkit-transform-origin: right;
-    -ms-transform-origin: right;
-    transform-origin: right;
-    -webkit-transition: -webkit-transform 300ms 100ms linear;
-    transition: -webkit-transform 300ms 100ms linear;
-    -o-transition: transform 300ms 100ms linear;
-    transition: transform 300ms 100ms linear;
-    transition: transform 300ms 100ms linear, -webkit-transform 300ms 100ms linear;
+    @include check-transition-timing(transform);
 }
 .menu .btn-menu{
     margin-top: 50px;
