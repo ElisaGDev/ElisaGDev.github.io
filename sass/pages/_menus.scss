@@ -6,6 +6,11 @@
     -webkit-transform: translateY(-30px);
     padding-bottom: 30px;
     margin-bottom: -30px;
+    @include breakpoints(desktop){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 .pictureRestaurant{
     height: 250px;
@@ -33,6 +38,9 @@
     i{
         font-size: 25px;
     }
+    @include breakpoints(desktop){
+        width: 100%;
+    }
 }
 .submenu{
     margin: 0 20px;
@@ -48,6 +56,9 @@
             width: 40px;
             margin-top: 5px;
         }
+    }
+    @include breakpoints(desktop){
+        width: 29%;
     }
 }
 .dishes{
@@ -138,4 +149,7 @@
     margin-top: 50px;
     text-align: -webkit-center;
     text-align: -moz-center;
+    @include breakpoints(desktop){
+        width: 100%;
+    }
 }

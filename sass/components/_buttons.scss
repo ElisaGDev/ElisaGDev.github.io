@@ -40,4 +40,8 @@
             color:$color-primary;
         }
     }
+    @include breakpoints(tablet){
+        width: 50%;
+        font-size: 18px;
+    }
  }

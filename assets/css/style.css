@@ -79,6 +79,12 @@ a, a:hover, a:active, a:focus {
 .btn-fnct:hover i {
   color: #9356DC;
 }
+@media screen and (min-width: 768px) {
+  .btn-fnct {
+    width: 50%;
+    font-size: 18px;
+  }
+}
 
 .loading-page {
   position: fixed;
@@ -298,6 +304,11 @@ header {
   display: flex;
   height: 60px;
 }
+@media screen and (min-width: 768px) {
+  header {
+    height: 80px;
+  }
+}
 
 .header_homepage {
   justify-content: center;
@@ -396,6 +407,27 @@ a .btn-pink {
 .functioning a {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .functioning {
+    align-items: center;
+  }
+}
+
+.functioning_list {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .functioning_list {
+    width: 100%;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .functioning_list {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
 
 a .circle {
   color: #FFF;
@@ -425,10 +457,26 @@ a .circle {
 .restaurants h2 {
   margin: 50px 20px 20px;
 }
+@media screen and (min-width: 768px) {
+  .restaurants a {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    width: 100%;
+  }
+}
 
 .restaurants figure {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   margin: 0 20px 10px;
   height: 270px;
   border-radius: 20px;
@@ -444,7 +492,7 @@ a .circle {
 
 .new {
   position: absolute;
-  right: 45px;
+  right: 20px;
   margin-top: 20px;
   padding: 10px 15px;
   background-color: #99E2D0;
@@ -513,6 +561,13 @@ figcaption p {
   padding-bottom: 30px;
   margin-bottom: -30px;
 }
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 .pictureRestaurant {
   height: 250px;
@@ -539,6 +594,11 @@ figcaption p {
 .nameRestaurant i {
   font-size: 25px;
 }
+@media screen and (min-width: 1024px) {
+  .nameRestaurant {
+    width: 100%;
+  }
+}
 
 .submenu {
   margin: 0 20px;
@@ -555,6 +615,11 @@ figcaption p {
   height: 3px;
   width: 40px;
   margin-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .submenu {
+    width: 29%;
+  }
 }
 
 .dishes {
@@ -654,6 +719,11 @@ figcaption p {
   margin-top: 50px;
   text-align: -webkit-center;
   text-align: -moz-center;
+}
+@media screen and (min-width: 1024px) {
+  .menu .btn-menu {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

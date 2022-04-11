@@ -2,6 +2,9 @@
 header {
     display: flex;
     height: 60px;
+    @include breakpoints(tablet){
+        height: 80px;
+    }
 }
 .header_homepage{
     justify-content: center;
