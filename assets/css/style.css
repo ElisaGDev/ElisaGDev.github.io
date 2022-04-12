@@ -447,9 +447,19 @@ a .circle {
   font-size: 20px;
   width: 3%;
 }
+@media screen and (min-width: 1024px) {
+  .icon {
+    margin: 0 15px;
+  }
+}
 
 .btn-fnct span {
   flex-grow: 2;
+}
+@media screen and (min-width: 1024px) {
+  .btn-fnct span {
+    margin-left: 15px;
+  }
 }
 
 .restaurants {
@@ -553,6 +563,7 @@ figcaption p {
 
 .emptyHeart {
   margin: auto;
+  bottom: 10px;
 }
 
 .menu {
