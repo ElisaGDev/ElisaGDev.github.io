@@ -2,8 +2,9 @@
 .restaurants{
     flex-direction: column;
     background-color: $color-grey;
+    padding-bottom: 60px;
     h2{
-        margin: 50px 20px 20px;
+        margin: 60px 20px 20px;
     }
     a{
         @include breakpoints(tablet){
@@ -24,7 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin: 0 20px 10px;
+    margin: 0 20px 20px;
     height: 270px;
     border-radius: 20px;
     @include shadow-box;
@@ -50,7 +51,6 @@ figcaption{
     display: flex;
     width: 100%;
     padding: 0px 20px;
-    background-color:$color-white;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     h3{
