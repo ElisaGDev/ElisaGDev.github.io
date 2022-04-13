@@ -2,11 +2,8 @@
 .loading-page{
     position: fixed;
     z-index: 3;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
     background-color: $color-lightgrey;
-    -webkit-animation: loading-background 3s 100ms backwards;
     animation: loading-background 3s 100ms backwards;
     opacity: 0.9;
 }

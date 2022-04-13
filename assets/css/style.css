@@ -40,8 +40,6 @@ a, a:hover, a:active, a:focus {
 
 .btn-pink {
   background: linear-gradient(170deg, #FF79DA, #a16be0);
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
   border-radius: 30px;
   height: 50px;
   line-height: 40px;
@@ -90,11 +88,8 @@ a, a:hover, a:active, a:focus {
 .loading-page {
   position: fixed;
   z-index: 3;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
   transform: scale(0);
   background-color: #EAEAEA;
-  -webkit-animation: loading-background 3s 100ms backwards;
   animation: loading-background 3s 100ms backwards;
   opacity: 0.9;
 }
@@ -587,7 +582,6 @@ figcaption p {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
   transform: translateY(-30px);
-  -webkit-transform: translateY(-30px);
   padding-bottom: 30px;
   margin-bottom: -30px;
 }
