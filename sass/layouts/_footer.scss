@@ -3,20 +3,12 @@ footer{
     background-color: $color-darkgrey;
     color:$color-white;
     padding-bottom: 30px;
-    @include breakpoints(tablet){
-        text-align: center;
-    }
     ul{
         list-style-type: none;
         display: flex;
         flex-direction: column;
         row-gap: 10px;
         margin-left: -20px;
-        @include breakpoints(desktop){
-            flex-direction: row;
-            column-gap: 50px;
-            justify-content: center;
-        }
     }
     i{
         font-size: 16px;
@@ -27,7 +19,4 @@ footer{
     font-family: 'Shrikhand', sans-serif;
     font-size: 20px;
     padding: 20px 0 10px 20px;
-    @include breakpoints(desktop){
-        text-align: center;
-    }
 }

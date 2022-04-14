@@ -2,7 +2,7 @@
 @mixin shadow-box($color: darken($color-grey, 20%)) {
     box-shadow: 0 3px 8px $color;
 }
-//Backgroung image menu's pages
+//Background image menu's pages
 @mixin resto-bkgd($resto) {
     background: url('./images/restaurants/#{map-get($images-resto, $resto)}') center/cover;
 }

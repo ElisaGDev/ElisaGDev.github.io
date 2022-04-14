@@ -341,24 +341,12 @@ footer {
   color: #FFF;
   padding-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
-  footer {
-    text-align: center;
-  }
-}
 footer ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   margin-left: -20px;
-}
-@media screen and (min-width: 1024px) {
-  footer ul {
-    flex-direction: row;
-    column-gap: 50px;
-    justify-content: center;
-  }
 }
 footer i {
   font-size: 16px;
@@ -369,11 +357,6 @@ footer i {
   font-family: "Shrikhand", sans-serif;
   font-size: 20px;
   padding: 20px 0 10px 20px;
-}
-@media screen and (min-width: 1024px) {
-  .titleFooter {
-    text-align: center;
-  }
 }
 
 .location {
@@ -404,6 +387,7 @@ footer i {
   text-align: center;
   font-weight: 200;
   color: #505050;
+  margin-top: 20px;
 }
 
 a .btn-pink {
@@ -638,6 +622,11 @@ figcaption p {
   margin: 0 20px;
   padding-top: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .submenu {
+    margin: initial;
+  }
+}
 .submenu h3 {
   text-transform: uppercase;
   font-weight: 200;
@@ -668,12 +657,24 @@ figcaption p {
   overflow: hidden;
   box-shadow: 0 3px 8px #c3c3c3;
 }
+@media screen and (min-width: 1024px) {
+  .dishes {
+    height: 80px;
+  }
+}
 .dishes .check__animation {
   background-color: #99E2D0;
   width: 70px;
   transform-origin: right;
   transform: scaleX(0);
   transition: transform 300ms 100ms linear;
+}
+@media screen and (min-width: 1024px) {
+  .dishes .check__animation {
+    position: absolute;
+    right: 0;
+    height: 80px;
+  }
 }
 .dishes .check__animation .anim_icon {
   color: #FFF;

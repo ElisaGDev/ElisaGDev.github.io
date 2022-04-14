@@ -53,6 +53,9 @@
 .submenu{
     margin: 0 20px;
     padding-top: 20px;
+    @include breakpoints(desktop){
+        margin: initial;
+    }
     h3{
         text-transform: uppercase;
         font-weight: 200;
@@ -80,12 +83,20 @@
     border-radius: 1rem;
     overflow: hidden;
     @include shadow-box;
+    @include breakpoints(desktop){
+        height: 80px;
+    }
     .check__animation{
         background-color: $color-tertiary;
         width: $check-transition-width;
         transform-origin: right;
         transform: scaleX(0);
         @include check-transition-timing(transform);
+        @include breakpoints(desktop){
+            position: absolute;
+            right: 0;
+            height: 80px;
+        }
         .anim_icon{
             color: $color-white;
             font-size: 1.6rem;
